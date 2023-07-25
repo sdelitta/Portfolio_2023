@@ -1,38 +1,114 @@
-.App {
+body {
+  background-color: #253330; 
+  color: #c9d3cf;
+  font-family: 'Oswald', sans-serif;
+}
+
+.navbar {
+  display: none;
+}
+
+.logo-container {
+  background-image: url('../public/Assets/Logo.png');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  padding-right: 50px;
+}
+
+.navbar-brand {
+  padding-left: 50px;
+}
+
+.navbar-toggler {
+  padding-right: 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #c3cdc9;
+  font-family: 'Oswald', sans-serif;
+}
+
+a, .btn {
+  background-color: #94270200;
+  color: #F2F2F2;
+}
+
+
+#main {
+  flex-grow: 1;
+  max-width: 1200px;
+  padding-left: 200px;
+}
+
+.welcome {
+  margin-top: -250px;
+  text-align: left;
+}
+
+
+header, footer {
+  background-color: #025942;
+}
+
+
+#home {
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+#about {
+  padding-left: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.floating-image {
+  float: right; 
+  max-width: 55%;
+  height: auto;
+  margin: 10px 26px 16px 0;
+}
+
+
+.icon {
+  color: #c9d3cf;
+  font-size: 2rem;
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.icon:hover {
+  color: #942702;
+  transform: scale(1.2);
+}
+
+.icon:active {
+  transform: scale(0.9);
+}
+
+
+#projects h3, p {
+  background-color: rgba(0, 0, 0, 0.677);
+  text-shadow: 1px 1px 1px rgb(31, 80, 53);
+}
+
+#modal-background {
+  background-color: none;
+  text-shadow: 1px 1px 1px rgb(31, 80, 53);
+}
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+  .navbar {
+    display: block;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  
+  #main {
+    padding-left: 0;
   }
 }

@@ -30,10 +30,6 @@ code {
   font-size: 1.2rem;
 }
 
-#sidebar-wrapper .list-group {
-  width: 15rem;
-}
-
 #page-content-wrapper {
   min-width: 100vw;
 }
@@ -41,3 +37,5 @@ code {
 #wrapper.toggled #sidebar-wrapper {
   margin-left: 0;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Sigmar+One&display=swap');

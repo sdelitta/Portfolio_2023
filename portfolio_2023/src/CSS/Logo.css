@@ -1,0 +1,29 @@
+.s-container {
+    perspective: 250px;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .s {
+    font-size: 120px;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    transition: transform 3s; /* Make the animation slower */
+    line-height: 0.7;
+  }
+
+  .s1 {
+    color: rgb(0, 255, 204);
+  }
+  .s2 {
+    color: rgb(255, 0, 81);
+  }
+  
+  .front {
+    transform: translateZ(2px) translateX(7px); /* Decrease the distance */
+  }
+  
+  .back {
+    transform: translateZ(-20px); /* Decrease the distance */
+  }
