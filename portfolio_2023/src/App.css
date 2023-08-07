@@ -87,20 +87,40 @@ header, footer {
 }
 
 
-#projects h3, p {
+#skills, #projects, #experience, #contact {
+  justify-content: center;
+  margin: 0 5%;
+}
+
+.project_info {
   background-color: rgba(0, 0, 0, 0.677);
   text-shadow: 1px 1px 1px rgb(31, 80, 53);
+  border-radius: 10px;
+  padding: 5px;
 }
 
 #modal-background {
-  background-color: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.818);
   text-shadow: 1px 1px 1px rgb(31, 80, 53);
 }
 
+.modal_body {
+  background-color: rgba(7, 97, 86, 0.931);
+}
 
+.modal_header {
+  background-color: grey;
+}
 
+.modal_footer {
+  background-color: grey;
+}
 
-
+.modal_button {
+  background-color: rgb(45, 44, 44);;
+}
 
 
 @media (max-width: 992px) {
