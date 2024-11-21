@@ -1,16 +1,25 @@
 import React, { useState } from 'react';
-import { FaJs, FaCss3Alt, FaHtml5, FaPython, FaReact } from 'react-icons/fa';
-// Continue importing the relevant Font Awesome icons for the rest of your skills...
+import { FaJs, FaCss3Alt, FaHtml5, FaPython, FaReact, FaBootstrap, FaDatabase, FaTrello, FaFigma } from 'react-icons/fa';
+import { DiDjango } from 'react-icons/di';
+import { SiMysql, SiFirebase, SiGatsby } from 'react-icons/si';
 
 function Skills() {
   const [currentSkill, setCurrentSkill] = useState(null);
 
   const skills = [
-    { name: 'JavaScript', proficiency: '80%', icon: <FaJs /> },
-    { name: 'CSS', proficiency: '70%', icon: <FaCss3Alt /> },
-    { name: 'HTML', proficiency: '75%', icon: <FaHtml5 /> },
-    { name: 'Python', proficiency: '60%', icon: <FaPython /> },
-    { name: 'React', proficiency: '65%', icon: <FaReact /> },
+    { name: 'JavaScript', proficiency: 'Intermediate', icon: <FaJs /> },
+    { name: 'CSS', proficiency: 'Advanced', icon: <FaCss3Alt /> },
+    { name: 'Bootstrap', proficiency: 'Intermediate', icon: <FaBootstrap /> },
+    { name: 'HTML', proficiency: 'Advanced', icon: <FaHtml5 /> },
+    { name: 'Python', proficiency: 'Intermediate', icon: <FaPython /> },
+    { name: 'Django', proficiency: 'Intermediate', icon: <DiDjango /> },
+    { name: 'MongoDB', proficiency: 'Novice', icon: <FaDatabase /> },
+    { name: 'SQL', proficiency: 'Novice', icon: <SiMysql /> },
+    { name: 'Firebase', proficiency: 'Advanced', icon: <SiFirebase /> },
+    { name: 'React', proficiency: 'Intermediate', icon: <FaReact /> },
+    { name: 'Gatsby', proficiency: 'Novice', icon: <SiGatsby /> },
+    { name: 'Trello', proficiency: 'Intermediate', icon: <FaTrello /> },
+    { name: 'Figma', proficiency: 'Intermediate', icon: <FaFigma /> },
     // Add the rest of your skills here...
   ];
 
@@ -27,9 +36,7 @@ function Skills() {
       {currentSkill && (
         <div className="my-3">
           <h4>{currentSkill.name}</h4>
-          <div className="progress">
-            <div className="progress-bar" role="progressbar" style={{width: currentSkill.proficiency}} aria-valuenow={currentSkill.proficiency} aria-valuemin="0" aria-valuemax="100">{currentSkill.proficiency}</div>
-          </div>
+          <p>Proficiency Level: {currentSkill.proficiency}</p>
         </div>
       )}
     </div>

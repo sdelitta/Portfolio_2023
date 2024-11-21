@@ -4,6 +4,10 @@ body {
   font-family: 'Oswald', sans-serif;
 }
 
+#sidebar-wrapper {
+  width: 20%;
+}
+
 .navbar {
   display: none;
 }
@@ -42,20 +46,20 @@ a, .btn {
   padding-left: 200px;
 }
 
+#home {
+  width: 100%;
+  text-align: center;
+  align-self: center;
+}
+
 .welcome {
-  margin-top: -250px;
+  margin-top: -20vh;
   text-align: left;
 }
 
 
 header, footer {
   background-color: #025942;
-}
-
-
-#home {
-  width: 100%;
-  text-align: center;
 }
 
 
@@ -70,6 +74,9 @@ header, footer {
   margin: 10px 26px 16px 0;
 }
 
+#skills {
+  margin-left: 5vw;
+}
 
 .icon {
   color: #c9d3cf;
@@ -86,17 +93,46 @@ header, footer {
   transform: scale(0.9);
 }
 
-
-#skills, #projects, #experience, #contact {
-  justify-content: center;
-  margin: 0 5%;
+#projects h2 {
+  margin-left: 5vw;
 }
 
+.project-carousel {
+  margin-top: 30px;
+  margin-left: 5vw;
+}
+
+.project-carousel .carousel-indicators {
+  bottom: 300px; 
+}
+
+.project-carousel .d-block {
+  width: 100%;  
+  object-fit: cover;
+  height: 650px;
+}
+
+.carousel-item {
+  height: 1000px;  
+  overflow: hidden; 
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover; 
+}
+
+
 .project_info {
-  background-color: rgba(0, 0, 0, 0.677);
+  background-color: rgba(0, 0, 0, 0.441);
   text-shadow: 1px 1px 1px rgb(31, 80, 53);
   border-radius: 10px;
-  padding: 5px;
+  padding: 2% 5%;
+  margin: 0 15%;
+  margin-top: 7%;
+  justify-content: center;
+  text-align: center;
+  width: 70%;
 }
 
 #modal-background {
@@ -122,6 +158,73 @@ header, footer {
   background-color: rgb(45, 44, 44);;
 }
 
+.resume-button {
+  margin-bottom: 15px;
+}
+
+#experience {
+  padding-left: 4%;
+  padding-right: 35%;
+  max-width: 1200px; /* Optional: Set a max-width if you don't want it to stretch too wide */
+  margin: 0 auto; /* Center the content */
+}
+
+
+#experience h4 {
+  font-size: 27px;
+}
+
+#contact {
+  justify-content: center;
+  width: 100vw;
+  padding: 1.4% 0;
+  background-color: rgba(4, 75, 71, 0.745);
+}
+
+.contact-section {
+  width: 40%;
+  padding: 1.1% 2%;
+}
+
+#contact h2 {
+  padding: 1% 0 0 1.9%;
+  margin-bottom: -.5rem;
+}
+
+.contact-info {
+  display: flex;
+}
+
+.contact-item {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.contact-item .fa {
+  margin-right: 0.5rem;
+  font-size: 1.5em;
+}
+
+.contact-item a {
+  margin-left: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+.midjourney img {
+  max-width: 9%;
+  margin: -1%;
+}
+
+.midjourney {
+  margin-left: -1%;
+}
+
 
 @media (max-width: 992px) {
   .navbar {
@@ -131,4 +234,99 @@ header, footer {
   #main {
     padding-left: 0;
   }
+
+  #skills {
+    margin-left: 1vw;
+  }
+
+  #projects h2 {
+    margin-left: 1vw;
+  }
+  
+  .project-carousel {
+    margin-top: 30px;
+    margin-left: 1vw;
+  }
+
+  .project-carousel .d-block {
+    width: 100%;
+    object-fit: contain;
+    height: 850px;
+  }
+
+  .carousel-item {
+    overflow: hidden; 
+  }
+  
+  .carousel-item img {
+    margin: -290px 0;
+    object-fit: scale-down; 
+  }
+
+  .project-carousel .carousel-indicators {
+    bottom: 280px; 
+  }
+
+  .project_info {
+    width: 90%;
+    margin: 0 5%;
+    margin-top: 50px;
+  }
+
+  .project-carousel .carousel-item {
+    height: 600px;
+  }
+
+
+  #contact {
+    width: 100vw;
+    background-color: rgba(4, 75, 71, 0.745);
+  }
+  
+  .contact-section {
+    width: 100%;
+    padding: 2% 2%;
+  }
+  
+  #contact h2 {
+    padding: 20px 0 0 0;
+    font-size: 1.6rem;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .contact-item {
+    margin: 1rem 0;
+    display: flex;
+    width: 40%;
+    align-items: center;
+  }
+  
+  .contact-item .fa {
+    margin-right: 0.5rem;
+    font-size: .8em;
+  }
+  
+  .contact-item a {
+    margin-left: 5px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .midjourney img {
+    max-width: 16%;
+    margin: -3px;
+  }
+  
+  .contact-item a:hover {
+    text-decoration: underline;
+  }
+
+  .contact-left{
+    margin-bottom: -4%;
+  }
+
 }
